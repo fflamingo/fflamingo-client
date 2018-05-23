@@ -1,0 +1,11 @@
+{
+  "name": "@fflamingo/form",
+  "version": "0.0.1",
+  "description": "FFlamingo frontend app Form handling",
+  "main": "index.js",
+  "author": "Leonardo Ascione <leonardo@favoloso.team>",
+  "license": "MIT",
+  "dependencies": {
+    "@fflamingo/ui": "^0.0.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@fflamingo/ui",
+  "version": "0.0.1",
+  "description": "Fflamingo UI components",
+  "main": "index.js",
+  "author": "Leonardo Ascione <leonardo@favoloso.team>",
+  "license": "MIT",
+  "private": false
+}
