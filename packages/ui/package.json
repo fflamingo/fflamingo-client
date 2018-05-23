@@ -2,8 +2,45 @@
   "name": "@fflamingo/ui",
   "version": "0.0.1",
   "description": "Fflamingo UI components",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "module": "./lib-esm/index.js",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc -m es6 -t es5 ./lib-esm",
+    "test": "jest"
+  },
   "author": "Leonardo Ascione <leonardo@favoloso.team>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.4",
+    "ts-jest": "^22.4.6",
+    "webpack": "^4.8.3"
+  },
+  "jest": {
+    "setupFiles": ["<rootDir>/__tests__/setupTests.ts"],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "((\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+    "globals": {
+      "ts-jest": {
+        "skipBabel": true
+      }
+    }
+  },
+  "dependencies": {
+    "@types/enzyme": "^3.1.10",
+    "@types/react": "^16.3.14",
+    "@types/react-dom": "^16.0.5",
+    "typescript": "^2.8.3"
+  },
+  "peerDependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
 }
